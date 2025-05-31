@@ -1,0 +1,221 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+input {
+  padding: 50px;
+  font-size: 3em;
+  margin-right: 10px;
+  border-radius: 14px;
+  border: none;
+}
+
+button {
+  background-color: #549c3d;
+  border: none;
+  padding: 50px 150px;
+  font-size: 3em;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  border-radius: 14px;
+}
+
+button:hover {
+  background-color: #2a8539;
+}
+
+.app-container {
+  position: relative;
+  min-height: 100vh;
+  overflow: hidden;
+  color: white;
+  font-family: Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+}
+
+.background-video {
+  position: fixed; /* fixa na tela toda */
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  z-index: -1; /* fica atrás dos conteúdos */
+  pointer-events: none; /* evita interação com o vídeo */
+}
+
+/* Garante que o app ocupe a altura total da tela */
+html,
+body {
+  height: 100%;
+  margin: 0;
+}
+
+/* Container principal do app em coluna */
+.app-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Faz o conteúdo crescer para empurrar o footer para baixo */
+main {
+  flex: 1;
+}
+
+/* Estilo do rodapé */
+footer {
+  font-size: 1.4em;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Main container para centralizar o conteúdo principal */
+.main-container {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.converter-label {
+  width: 980px;
+  margin-left: 170px;
+  margin-right: 170px;
+  text-align: center;
+  font-size: 4rem; /* aumenta o tamanho da fonte */
+  font-weight: bold; /* deixa em negrito */
+  font-family: "Arial", sans-serif; /* define a fonte */
+  background-color: #549c3d;
+  color: white; /* cor do texto (ajuste conforme o fundo) */
+  margin-bottom: 50px;
+}
+
+.converter {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  padding: 20px;
+  color: white;
+}
+
+.converter-label {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+select,
+input,
+button {
+  padding: 15px;
+  font-size: 25px;
+  border-radius: 6px;
+  border: none;
+}
+
+button {
+  background-color: #4caf50;
+  color: white;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+select {
+  padding: 20px 30px;
+  font-size: 30px;
+  border-radius: 14px;
+  border: none;
+  cursor: pointer;
+  background-color: white;
+  color: black;
+  width: 200px; /* largura fixa para ficar legal */
+  box-sizing: border-box;
+  transition: background-color 0.3s ease;
+}
+
+select:hover {
+  background-color: #e0e0e0;
+}
+
+/* Container para input e select lado a lado */
+.converter-inputs {
+  display: flex;
+  gap: 20px; /* espaçamento entre input e select */
+  justify-content: center;
+  width: 100%;
+  max-width: 600px; /* controla o tamanho máximo dos campos juntos */
+  margin-bottom: 30px;
+}
+
+.converter-inputs input,
+.converter-inputs select {
+  flex: 1; /* ocupa o mesmo espaço */
+  padding: 50px 20px;
+  font-size: 3em;
+  border-radius: 14px;
+  border: none;
+}
+
+/* Botão centralizado abaixo dos inputs */
+.converter-button {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.converter-button button {
+  padding: 50px 150px;
+  font-size: 3em;
+  border-radius: 14px;
+}
+
+/* Responsividade para telas menores */
+@media (max-width: 768px) {
+  .converter-inputs {
+    flex-direction: column; /* empilha input e select */
+    max-width: 100%; /* ocupa toda largura possível */
+    gap: 15px; /* um espaçamento menor */
+    padding: 0 20px; /* padding lateral */
+  }
+
+  .converter-inputs input,
+  .converter-inputs select {
+    flex: none; /* desativa flex-grow */
+    width: 100%; /* ocupa 100% da largura */
+    font-size: 2em; /* reduz o tamanho da fonte */
+    padding: 30px 15px;
+  }
+
+  .converter-button button {
+    width: 100%; /* ocupa toda largura */
+    padding: 30px 0;
+    font-size: 2.5em;
+    border-radius: 12px;
+    max-width: 400px; /* largura máxima do botão */
+  }
+}
+
+/* Para celulares ainda menores */
+@media (max-width: 400px) {
+  .converter-inputs input,
+  .converter-inputs select {
+    font-size: 1.6em;
+    padding: 20px 10px;
+  }
+
+  .converter-button button {
+    font-size: 2em;
+    padding: 20px 0;
+  }
+}
