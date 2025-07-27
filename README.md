@@ -1,12 +1,44 @@
-# React + Vite
+# Conversor de Moedas React
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Este é um projeto simples de um conversor de moedas feito em React, que utiliza a API gratuita [Frankfurter](https://www.frankfurter.app/) para buscar taxas de câmbio em tempo real.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Funcionalidades
 
-## Expanding the ESLint configuration
+- Entrada de valor numérico para conversão
+- Seleção da moeda de origem
+- Seleção da moeda de destino
+- Conversão instantânea ao clicar no botão
+- Exibição do resultado com formatação numérica
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## Tecnologias
+
+- React (com Hooks)
+- CSS puro para estilização
+- API Frankfurter para taxas de câmbio
+
+---
+
+## Estrutura do projeto
+
+- `src/App.jsx`: componente principal do conversor
+- `src/index.css`: estilos CSS do projeto
+- `public/background.png`: imagem de fundo
+- `public/icon.png`: imagem de ícone
+
+---
+
+## API usada
+
+[Frankfurter API](https://www.frankfurter.app/) — API pública e gratuita que não requer autenticação para obter taxas de câmbio.
+
+---
+
+## Contato
+
+Para dúvidas ou sugestões, entre em contato:
+
+- Larissa Borges / l.carvaborges@gmail.com / www.linkedin.com/in/larissabcarvalhodev
