@@ -1,0 +1,102 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-image: url("./background.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  font-family: sans-serif;
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.card {
+  max-width: 700px;
+  margin: 40px auto;
+  padding: 20px;
+  background: #daa520;
+  background: linear-gradient(
+    90deg,
+    rgba(218, 165, 32, 0.7) 0%,
+    rgba(223, 240, 43, 0.7) 50%,
+    rgba(218, 165, 32, 0.7) 100%
+  );
+  border: 2px solid black;
+  border-radius: 5px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  font-family: "Inter", sans-serif;
+}
+
+.container {
+  max-width: 400px;
+  margin: 50px auto;
+  padding: 2rem;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  text-align: center;
+  background-color: #cccccc;
+}
+
+.card input,
+.card select {
+  width: 60%;
+  margin: 12px auto;
+  padding: 12px;
+  font-size: 1rem;
+  border: 2px solid black;
+  border-radius: 8px;
+  background-color: #fff;
+  display: block;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  font-family: "Inter", sans-serif;
+}
+
+.card input:focus,
+.card select:focus {
+  outline: none;
+  border-color: #9cda20;
+  box-shadow: 0 0 8px #9cda20;
+  width: 60%;
+}
+
+.card button {
+  width: 50%;
+  margin: 20px 0 10px;
+  padding: 15px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: black;
+  background: linear-gradient(90deg, #c4c99f, #8b8f72);
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background 0.3s ease, box-shadow 0.3s ease;
+  font-family: "Inter", sans-serif;
+}
+
+.card button:hover {
+  background: linear-gradient(90deg, #daa520, #daa520);
+  box-shadow: 0 4px 12px rgba(170, 136, 10, 0.7);
+}
+.resultado {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #333;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+}
+h1 {
+  font-family: "Cinzel Decorative", serif;
+  font-size: 3rem;
+}
+.cinzel-decorative-regular {
+  font-family: "Cinzel Decorative", serif;
+  font-weight: 400;
+  font-style: normal;
+}
